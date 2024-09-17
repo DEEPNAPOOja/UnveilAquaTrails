@@ -1,0 +1,87 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff; /* Adjust background color as needed */
+    color: #0C8CE9;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 2rem; /* Adjust as needed */
+    margin-right: 1rem; /* Space between logo and links */
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .navbar-links a {
+    color: #0C8CE9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    font-weight: 600;
+  }
+
+  .navbar-signup{
+    color: #0C8CE9;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  .navbar-button {
+    background-color: #007bff; /* Adjust button color as needed */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem; /* Space between buttons */
+    cursor: pointer;
+    border-radius: 0.25rem; /* Rounded corners for buttons */
+    font-size: 0.875rem; /* Adjust font size as needed */
+  }
+  
+  .navbar-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-links a {
+      margin: 0.5rem 0;
+    }
+  
+    .navbar-buttons {
+      margin-top: 1rem;
+      justify-content: center;
+    }
+  }
+  
+  
