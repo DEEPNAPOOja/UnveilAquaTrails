@@ -1,0 +1,167 @@
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .gallery-header {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .gallery-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #2c3e50;
+  }
+  
+  .gallery-header h4 {
+    margin: 5px 0 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  .imageGallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .image-main {
+    flex: 2;
+  }
+  
+  .image-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .imageGallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .about {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .info-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .info-section > div {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .info-section h3, .about h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .info-section p, .info-section ul, .about p {
+    margin: 0;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  .info-section ul {
+    padding-left: 20px;
+  }
+  
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .activities, .similar-places {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .activities h2, .similar-places h2 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  .activities ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .activities li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  .activities li svg {
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .similar-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .similar-images img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .imageGallery {
+      flex-direction: column;
+    }
+  
+    .image-side {
+      flex-direction: row;
+    }
+  
+    .info-section, .bottom-section {
+      flex-direction: column;
+    }
+  }
